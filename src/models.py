@@ -16,7 +16,7 @@ class User(db.Model):
         return {
             "id": self.id,
             "email": self.email,
-            # do not serialize the password, it's a security breach
+            
         }
 
 
@@ -49,7 +49,7 @@ class Character(db.Model):
             "height": self.height
         }
 
-
+#tabla de favoritos
 class Favorite(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("user.id"), nullable=False)
@@ -69,3 +69,5 @@ class Favorite(db.Model):
             "planet_id": self.planet_id,
             "character_id": self.character_id,
         }
+    
+

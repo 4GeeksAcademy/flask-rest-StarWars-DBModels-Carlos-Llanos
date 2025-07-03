@@ -15,10 +15,10 @@ flask-cors = "==4.0.0"
 gunicorn = "*"
 flask-admin = "==1.6.1"
 wtforms = "==3.0.1"
-eralchemy2 = "*"
 flask = "*"
 flask-sqlalchemy = "*"
 sqlalchemy = "*"
+eralchemy2 = "*"
 
 [requires]
 python_version = "3.13"
