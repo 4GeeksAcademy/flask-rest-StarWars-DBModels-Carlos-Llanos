@@ -1,6 +1,6 @@
-from flask_sqlalchemy import SQLAlchemy # pyright: ignore[reportMissingImports]
-from sqlalchemy import String, Boolean, ForeignKey # pyright: ignore[reportMissingImports]
-from sqlalchemy.orm import Mapped, mapped_column, relationship # pyright: ignore[reportMissingImports]
+from flask_sqlalchemy import SQLAlchemy 
+from sqlalchemy import String, Boolean, ForeignKey 
+from sqlalchemy.orm import Mapped, mapped_column, relationship 
 
 db = SQLAlchemy()
 
